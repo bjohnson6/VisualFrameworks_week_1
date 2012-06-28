@@ -14,10 +14,12 @@
 
         <!--Conversely if you don't want to allow search engines access or follow links (private sites)...-->
         <meta name="robots" content="noindex, nofollow" />
-
+        
         <!-- Allows our content to size correctly to an iphone display -->
         <!-- Viewport tells the browser to allow the user to scale the content and how wide it should assume the content will be displayed (i.e. a full 960px or the width of the divice)-->
         <meta name="viewport" content="user-scalable=no, width=device-width" /> 
+        <title>My Love Tracker</title>
+
         <!--link FINISH THIS -->
     </head>	
     <body>
@@ -28,20 +30,48 @@
          <!-- Paragraph Tags-->
          <p>Add A Moment</p>
 
-
-
-         
+        
+ 
          <!--My <input form elements/> -->
-         <input type="text" id="firstName" />
-         <input type="text" id="lastName"  />
-         <input type="text" id="when" />
-         <input type="text" id="where" />
-         <input type="radio" name="color" value="Blue" />
-         <input type="radio" name="color" value="Blue" />
-         <input type="range" number=1-10 />
-         <input type="date" id="start" />
-         <input type="date" id="end" />
-         <input type="submit" id="save" />
-         <input type="menu" />
+         <form action="process.php" method="post">
+         	<select>
+         		<optgroup label="--Choose A Moment--">
+         			<option>Our Names</option>
+         			<option>First Met</option>
+         			<option>First Date</option>
+         			<option>First Kiss</option>
+         			<option>First said I Love You!</option>
+         			<option>Our Song</option>
+         		</optgroup>
+         		<optgroup label="Choose Something Else">
+         			<option>Relationship Status</option>
+         			<option>Calculate Time Spent Together</option>
+         			<option>Note A Special Moment Between Us</option> 			
+         		</optgroup>
+         	</select>	
 
+                    <input type="text" id="Name" />
+                    <input type="text" id="how"  />
+                    <input type="text" id="when" />
+                    <input type="text" id="where" />
+                    <a name="yes">Home</a> <!--Figure out how to link the radio buttons -->
+                    <input type="radio" name="yes" value="yes"/>yes
+                    <input type="radio" name="no" value="no"/>no
+                    <input type="range" name="quantity" min="0" max="10" />
+                    <input type="date" id="start" />
+                    <input type="date" id="end" />
+                    <input type="submit" id="save" />
+
+                    
+
+
+
+             
+
+         </form>
+
+
+
+    </body>    
+</html>
 
