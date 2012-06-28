@@ -35,24 +35,24 @@
          <!--My <input form elements/> -->
          <form action="process.php" method="post"> 
          	    <ul>
-         	    	<li><label for="Addevent">Add An Event:<label><select  id="Addevent"/
-         	    
-         	    	<select name="Choose Your Moment"> 
-         	    	<option>Our Names</option>
+         	    	<li><label for="Addevent">Add An Event:</label><select  id="Addevent">
+           	    	<optgroup label="Choose Your Moment"> 
          			<option>First Met</option>
          			<option>First Date</option>
          			<option>First Kiss</option>
          			<option>First said I Love You!</option>
          			<option>Our Song</option>
-         		<optgroup label="Choose Something Else">
+         		 <optgroup label="Choose Something Else">
+         			<option>Our Names</option>
          			<option>Relationship Status</option>
-         			<option>Calculate Time Spent Together</option>
-         			<option>Note A Special Moment Between Us</option>	                                  
-         		</optgroup> 
-         	</select></li>
+         			<option>Calculate Time Together</option>
+         			<option>Note A Special Moment</option>	                                  
+         		 </optgroup> 
+         	     </select></li>
                 
                    <li><label for="Name">Name:</label><input type="text" id="Name"/></li>
                    <li><label for="When">When:</label><input type="text" id="When"/></li>
+                   <li><label for="What">What:</label><input type="text" id="What"/></li>
                    <li><label for="Where">Where:</label><input type="text" id="Where"/></li>
                    <li><label for="Zodiac">Are your Z☯diac signs compatible?</label></li><a name="same"></a><input type="radio" name="same" value="yes"/>yes <input type ="radio" name="same"value="no"/>no <id="Zodiac"/></li>
 
@@ -63,13 +63,8 @@
                 </ul>   
                    <input type="submit" id="save" />
                     <!--Clear Stored data and add Display Data -->
-
-
-
                    
-                
-
-         </form>
+            </form>
 
 
 
