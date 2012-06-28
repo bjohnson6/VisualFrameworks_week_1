@@ -27,17 +27,13 @@
     	<header> 
            <h1> My Love Tracker</h1>
         </header> 
-         <!-- Paragraph Tags-->
-         <p>--Add A Moment-----------------------------------</p> 
-        
-       
- 
-         <!--My <input form elements/> -->
-         <form action="process.php" method="post"> 
-         	    <ul>
-         	    	<li><label for="Addevent">Add An Event:</label><select  id="Addevent">
-           	    	<optgroup label="Choose Your Moment"> 
-         			<option>First Met</option>
+
+        <form>
+            <fieldset>
+    <legend>Add A Moment:</legend>
+    Add An event: <select> /><br />
+    <optgroup label="Choose Your Moment"> 
+         <option>First Met</option>
          			<option>First Date</option>
          			<option>First Kiss</option>
          			<option>First said I Love You!</option>
@@ -48,30 +44,28 @@
          			<option>Calculate Time Together</option>
          			<option>Note A Special Moment</option>	                                  
          		 </optgroup> 
-         	     </select></li>
-                
-                   <li><label for="Name">Name:</label><input type="text" id="Name"/></li>
-                   <li><label for="When">When:</label><input type="text" id="When"/></li>
-                   <li><label for="What">What:</label><input type="text" id="What"/></li>
-                   <li><label for="Where">Where:</label><input type="text" id="Where"/></li>
-                   <li><label for="Zodiac">Are your Z☯diac signs compatible?</label></li><a name="same"></a><input type="radio" name="same" value="yes"/>yes <input type ="radio" name="same"value="no"/>no <id="Zodiac"/></li>
+         	     </select>			
+    Name: <input type="text" /><br />
+    When: <input type="text" /><br />
+    What: <input type="text" /><br />
+    Where: <input type="text" /><br />
+    Are your Z☯diac signs compatible? <br /><input type="radio" name="same" value="yes"/>yes <input type ="radio" name="same"value="no"/>no <br />
+    Rate My Lover: <input type ="range" id="quantity" min="1" max="10" /><br />
+    Start: <input type="date" /><br />
+    End: <input type="date" /><br />
+    Note:<input type="text" /><br />
 
-                   <li><label for="Rate">Rate My Lover</label><input type="range"  id="quantity" min="1" max="10" id="Rate"/></li>
-                   <li><label for="Start">Start Date</label><input type="date" id="Start"/></li>
-                   <li><label for="End">End Date</label><input type="date" id="End"/></li>
-                   <li><label for="Note">Notes:</label><input type="text" id="Note"/></li>
-                </ul>  
-                 
+    
+  </fieldset>
+</form>
+
+ 
                   <input type="submit" id="save" />
                   <ul>
                   	<!--Clear Stored data and add Display Data -->
                     <a href="#">Clear Stored Data</a>
                     <a href="#">Display Data</a>
                   </ul>
-       
-            </form>
-
-
 
     </body>    
 </html>
